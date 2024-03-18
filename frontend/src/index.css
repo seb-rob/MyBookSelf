@@ -1,0 +1,260 @@
+.light {
+  --background_1: #eceff1;
+  --background_2: #cfd8dc;
+  --background_3: #b0bec5;
+  --btn_background_1: #03a9f4;
+  --btn_background_2: #009688;
+  --btn_background_3: #66bb6a;
+  --text_1: #263238;
+  --text_2: #37474f;
+  --text_link: #4fc3f7;
+  --text_link_hover: #0288d1;                                          
+}
+
+.dark {
+  --background_1: #212121;
+  --background_2: #424242;
+  --background_3: #616161;
+  --btn_background_1: #1b5e20;
+  --btn_background_2: #33691e;
+  --btn_background_3: #00bfa5;
+  --text_1: #fafafa;
+  --text_2: #f7f7f7;
+  --text_link: #0288d1;
+  --text_link_hover: #4fc3f7;                                    
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.landing_page {
+  background-color: var(--background_1);
+  color: var(--text_1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing_page_container{
+  min-width: 300px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_container{
+  background-color: var(--background_2);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.form_title{
+  margin-top: 8px;
+}
+
+
+.form_input_container{
+  width: 100%;
+  padding: 8px;
+  /* background-color: gray; */
+  margin: 5px 0 ;
+}
+
+.input{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  outline-style: none;
+  outline-color: aqua;
+  border: none;
+  background-color: var(--background_3);
+  color: var(--text_1);
+}
+
+.auth_btn{
+  background-color: var(--btn_background_1);
+  font-weight: bold;
+}
+
+.intro_container{
+  min-width: 300px;
+  min-height: 400px;
+  max-width: 800px;
+  background-color: var(--background_2);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.intro_container_inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.link{
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: flex-start;
+  margin: 15px;
+  color: var(--text_link);
+}
+
+.link:hover{
+  color: var(--text_link_hover);
+}
+
+.home{
+  background-color: var(--background_1);
+  height: 100vh;
+  width: 100vw;
+  color: var(--text_1);
+}
+
+.header{
+  background-color: var(--background_2);
+  color: var(--text_1)
+}
+
+.logo{
+  font-family: fantasy;
+  letter-spacing: 2px;
+  font-size: 23px;
+}
+
+.item{
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.item:hover{
+  color: var(--text_2);
+}
+
+.custom_card_container{
+  background-color: var(--background_2);
+  color: var(--text_1);
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid var(--background_3);
+  transition: all 200ms ease-in;
+}
+
+.custom_card_container:hover{
+  background-color: var(--background_3);
+  box-shadow: 1px 1px 5px var(--text_link_hover);
+}
+
+.custome_card_container_content{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.book_image{
+  border: 1px solid var(--background_3);
+  border-radius: 2px;
+  height: 100px;
+  width: 175px;
+}
+
+.book_title{
+  font-weight: 500;
+  text-wrap: wrap;
+  margin-top: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 1px;
+}
+
+.action_item{
+  cursor: pointer;
+}
+
+.action_item:hover{
+  color: var(--text_2);
+}
+
+.action_item_link{
+  color: inherit;
+}
+
+.action_item_link:hover{
+  color: inherit;
+}
+
+.modal_additional{
+  background-color: var(--background_2);
+  color: var(--text_1);
+}
+
+.close_btn{
+  color: var(--text_1);
+}
+
+/* ------------------------- scrollbar settings ---------------------- */
+::-webkit-scrollbar {
+  width: 5px;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 5px;
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+::-webkit-input-placeholder{
+  color: var(--text_2)
+}
